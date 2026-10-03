@@ -248,7 +248,7 @@ export default function Home() {
         {/* projects */}
         <section id="projects" className="my-5 p-2">
           <h2 className="my-5">Projects</h2>
-          <div className="d-flex flex-wrap justify-content-center gap-4">
+          <div className="d-flex flex-wrap gap-4">
             {
               projects.map((project) => {
                 return (
