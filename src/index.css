@@ -1,0 +1,164 @@
+:root {
+  --bg: #0B1220;
+  --surface: #111A2E;
+  --border: #1F2A44;
+  --text: #E6EAF2;
+  --text-muted: #94A3B8;
+  --primary: #3B82F6;
+  --primary-hover: #2f7cdb;
+  --accent: #14B8A6;
+  --success: #22C55E;
+  --success-hover: #32e674;
+  --success-active:#3fea7d;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 { 
+  font-family: var(--font-heading);  
+}
+
+p{
+  color:var(--text-muted);
+}
+
+.navbar-brand h4, .contents h1, h2{
+  color:var(--success);
+}
+
+.navbar{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .nav-link{
+  color:var(--text);
+}
+
+.nav-link:hover, #nav-active{
+  color:var(--success);
+}
+
+.year, .tech-stack{
+  color:var(--primary);
+}
+
+.nav-link, h2{
+  position: relative;
+}
+
+.nav-link::after, h2::after{
+  content:"";
+  position: absolute;
+  left:0;
+  bottom:-20px;
+  width:0;
+  height: 3px;
+  background: var(--success);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after{
+  width: 50%;
+}
+
+h2::after{
+  width: 5%;
+}
+
+.contents, .experience-section .work{
+  color:var(--text-muted);
+}
+
+.contents p{
+  flex-basis: 50%;
+}
+
+.btn-success{
+  background-color:var(--success);
+  box-shadow: 0px 0px 10px var(--success);
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover{
+  background-color: var(--success-hover);
+  transform: translateY(-5px);
+}
+
+.btn-outline-primary{
+  color: var(--primary);
+  box-shadow: 0px 0px 10px var(--primary);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover{
+  background-color: var(--primary);
+  transform: translateY(-5px);
+} 
+
+.experience-container, .details-container{
+  border-left: 3px solid var(--success);
+  padding-left: 20px;
+}
+
+.my-section, .project-section{
+  padding:10px;
+  border-radius: 10px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.my-section p, .project-section p{
+  width: 500px;
+}
+
+.circle{
+  position:relative;
+}
+
+.circle::before{
+  content: "o";
+  position: absolute;
+  left:-37px;
+  color:var(--success);
+}
+
+.skill-section{
+  height:50px
+}
+
+.project-section{
+  border:2px solid var(--success);
+  box-shadow: 0px 0px 10px var(--success);
+  padding: 20px;
+}
+
+.project-section:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 20px var(--success);
+  transform: translateY(-5px);
+}
+
+.project-section .desc{
+  width:300px;
+}
+
+@media (max-width:992px){
+  .hero-contents{
+    flex-wrap: wrap;
+  }
+  .work{
+    width: 100%;
+  }
+}
+
+
+
