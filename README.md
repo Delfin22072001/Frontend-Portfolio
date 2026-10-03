@@ -1,16 +1,68 @@
-# React + Vite
+# Delfin D | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive, single-page portfolio website that showcases my skills, experience, certification, education, and projects. Built with React.js and Bootstrap.
 
-Currently, two official plugins are available:
+**Live Demo:** [add your deployed link here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Preview
 
-## React Compiler
+<!-- Add a screenshot of the site: ![Portfolio preview](./screenshot.png) -->
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- Dark navy theme with green and blue accents and glowing card effects
+- Hero section with a short introduction, project shortcut, and downloadable CV
+- Skills displayed as tags
+- Timeline layouts for experience, certification, and education
+- Project cards with Live Demo and GitHub buttons that appear only when a link is available
+- Contact section with LinkedIn, WhatsApp, and Email buttons, no form needed
+- Fully responsive layout using the Bootstrap grid
+- Content driven by simple arrays of objects, so updating the site means editing data, not markup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Tech Stack
+
+- React.js (JavaScript ES6)
+- Bootstrap
+- CSS3
+- Font Awesome icons
+
+## Sections
+
+1. Hero
+2. About
+3. Skills
+4. Experience
+5. Certification
+6. Education
+7. Projects
+8. Contact
+
+## Getting Started
+
+Make sure Node.js and npm are installed, then run:
+
+```bash
+git clone https://github.com/Delfin22072001/<repo-name>.git
+cd <repo-name>
+npm install
+npm run dev
+```
+
+Open the local address shown in the terminal to view the site.
+
+## Customizing the Content
+
+- **Text content:** The `skills`, `experience`, and `projects` arrays at the top of `Home.jsx` hold the content for those sections. Add, edit, or remove objects to update the site.
+- **Resume:** Replace the PDF in `src/assets/files/` with your latest resume, keeping the same file name.
+- **Hero image:** Replace the image in `src/assets/Images/`.
+- **Project links:** Set the `live` and `github` fields on a project. Leave a field out and its button is hidden automatically.
+
+## Author
+
+**Delfin D** — Full Stack Developer (React.js, Python, Django, WordPress)
+
+Open to full-time roles and freelance WordPress projects.
+
+- LinkedIn: [linkedin.com/in/delfin-d-839876227](https://www.linkedin.com/in/delfin-d-839876227/)
+- GitHub: [github.com/Delfin22072001](https://github.com/Delfin22072001)
+- Email: delfin22072002@gmail.com
