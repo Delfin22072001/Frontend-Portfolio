@@ -2,7 +2,7 @@
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg px-3">
+      <nav className="navbar navbar-expand-lg px-3" data-bs-theme="dark">
         <div className="container pt-3">
           <a className="navbar-brand" href="#">
             <h4 className="fw-bold">DELFIN D</h4>

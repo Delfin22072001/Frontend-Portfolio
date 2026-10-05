@@ -164,8 +164,8 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/delfin-d-839876227/" target="_blank"><i className="fa-brands fa-linkedin fs-4"></i></a>
               </div>
             </div>
-            <div className="hero-image">
-              <img src={image} alt="Girl Coding" style={{ width: "500px" }} />
+            <div>
+              <img src={image} alt="Girl Coding" style={{ width: "500px", paddingLeft: "20px" }} />
             </div>
           </div>
         </section>
