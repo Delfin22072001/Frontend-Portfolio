@@ -159,7 +159,7 @@ export default function Home() {
                 <a className="btn btn-outline-primary" href="#projects">View Projects</a>
                 <a href={resume} download="Delfin_Resume.pdf" className='btn btn-success'>Download CV</a>
               </div>
-              <div className="icons my-3 d-flex gap-3">
+              <div className="my-3 d-flex gap-3">
                 <a href="https://github.com/Delfin22072001/" target="_blank"><i className="fa-brands fa-github fs-4"></i></a>
                 <a href="https://www.linkedin.com/in/delfin-d-839876227/" target="_blank"><i className="fa-brands fa-linkedin fs-4"></i></a>
               </div>
@@ -278,7 +278,7 @@ export default function Home() {
             <div className="d-flex justify-content-center gap-3">
               <a href="https://www.linkedin.com/in/delfin-d-839876227/" target="_blank" className="btn btn-outline-primary">LinkedIn</a>
               <a href="https://wa.me/918300957074?text=Hi%20Delfin%2C%20I%20saw%20your%20portfolio" target="_blank" className="btn btn-success">WhatsApp</a>
-              <a href="mailto:delfin22072002@gmail.com" target="_blank" className="btn btn-outline-primary">Email</a>
+              <a href="mailto:delfin22072002@gmail.com" className="btn btn-outline-primary">Email</a>
             </div>
           </div>
         </section>
