@@ -168,7 +168,7 @@ export default function Home() {
         </section>
 
         {/* about section*/}
-        <section id="about" className="my-5 px-3">
+        <section id="about" className="my-5 p-3">
           <h2 className="my-5">About me</h2>
           <p>I'm a Full Stack Developer who enjoys building web applications that are fast, responsive, and easy to use. On the front end I work with HTML5, CSS3, JavaScript, React.js, and Bootstrap. On the back end I use Python, Django, REST APIs, and SQL.</p>
           <p>Before moving into development, I spent two years as an Associate Lead Engineer in email marketing and campaign operations. There I managed campaign databases, ran data validation and quality checks, and tracked performance. That work taught me to debug carefully, think analytically, and work with cross-functional teams, and I bring those habits to every project.</p>
