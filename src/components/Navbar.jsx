@@ -15,7 +15,8 @@ export default function Navbar() {
               <a id="nav-active" className="nav-link" aria-current="page" href="#">Home</a>
               <a className="nav-link" href="#about">About</a>
               <a className="nav-link" href="#skills">Skills</a>
-              <a className="nav-link" href="#experience">Experience & Certification</a>
+              <a className="nav-link" href="#experience">Experience</a>
+              <a className="nav-link" href="#certification">Certification</a>
               <a className="nav-link" href="#projects">Projects</a>
               <a className="nav-link" href="#contact">Contact</a>
             </div>

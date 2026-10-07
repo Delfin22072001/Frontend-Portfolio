@@ -215,7 +215,7 @@ export default function Home() {
         </section>
 
         {/* certification */}
-        <section id="certifications" className="p-2">
+        <section id="certification" className="p-2">
           <h2 className="my-5">Certification</h2>
           <div className="details-container">
             {certifications.map((item) => (
