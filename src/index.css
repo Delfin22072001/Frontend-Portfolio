@@ -110,14 +110,14 @@ h2::after{
   padding-left: 20px;
 }
 
-.my-section, .project-section{
+.my-section, .project-section, .testimonial-section{
   padding:10px;
   border-radius: 10px;
   width: fit-content;
   transition: all 0.3s ease;
 }
 
-.my-section p, .project-section p{
+.my-section p, .project-section p, .testimonial-section p{
   width: 500px;
 }
 
@@ -136,13 +136,13 @@ h2::after{
   height:50px
 }
 
-.project-section{
-  border:2px solid var(--success);
+.project-section, .testimonial-section{
+  border:3px solid var(--success);
   box-shadow: 0px 0px 10px var(--success);
   padding: 20px;
 }
 
-.project-section:hover{
+.project-section:hover, .testimonial-section:hover{
   cursor: pointer;
   box-shadow: 0px 0px 20px var(--success);
   transform: translateY(-5px);

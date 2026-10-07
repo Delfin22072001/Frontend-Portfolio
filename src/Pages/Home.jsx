@@ -15,50 +15,62 @@ export default function Home() {
 
   const skills = [
     {
+      id:1,
       technology: "HTML5",
       value: 90
     },
     {
+      id:2,
       technology: "CSS3",
       value: 80
     },
     {
+      id:3,
       technology: "JavaScript",
       value: 70
     },
     {
+      id:4,
       technology: "Bootstrap",
       value: 60
     },
     {
+      id:5,
       technology: "React",
       value: 50
     },
     {
+      id:6,
       technology: "Python",
       value: 50
     },
     {
+      id:7,
       technology: "Django",
       value: 50
     },
     {
+      id:8,
       technology: "REST API",
       value: 50
     },
     {
+      id:9,
       technology: "SQL",
       value: 70
     },
     {
+      id:10,
       technology: "Git/GitHub",
       value: 70
     },
     {
+      id:11,
       technology: "WordPress",
       value: 80
     },
     {
+      id:12,
       technology: "Responsive Design",
       value: 90
     },
@@ -72,6 +84,15 @@ export default function Home() {
       place: "St. Xavier's Catholic College of Engineering",
     },
   ];
+
+  const testimonials = [
+    {
+      id: 1,
+      owner: "Artorra",
+      text:"I had a really good experience working on my website. All my requirements were carefully understood and fulfilled, and the project was completed ahead of the expected deadline, which was impressive.I’m very happy with the final result. I would definitely recommend the service to others looking for reliable and professional website development."
+    },
+  ];
+
 
   const experience = [
     {
@@ -120,30 +141,6 @@ export default function Home() {
     },
   ];
 
-  const contacts = [
-    {
-      id: 1,
-      label: "Email",
-      value: "delfin22072002@gmail.com",
-      href: "mailto:delfin22072002@gmail.com?subject=Hello%20Delfin",
-      icon: "fa-solid fa-envelope",
-    },
-    {
-      id: 4,
-      label: "LinkedIn",
-      value: "delfin-d",
-      href: "https://www.linkedin.com/in/delfin-d-839876227/",
-      icon: "fa-brands fa-linkedin",
-    },
-    {
-      id: 5,
-      label: "GitHub",
-      value: "Delfin22072001",
-      href: "https://github.com/Delfin22072001/",
-      icon: "fa-brands fa-github",
-    },
-  ];
-
   return (
     <>
       <div className="container">
@@ -183,9 +180,9 @@ export default function Home() {
           <h2 className="my-5">Skills</h2>
           <div className="d-flex flex-wrap gap-2">
             {
-              skills.map((skill, index) => {
+              skills.map((skill, _) => {
                 return (
-                  <div key={index} className="skill-section">
+                  <div key={skill.id} className="skill-section">
                     <div className="tech-label d-flex justify-content-between">
                       <button className="btn btn-outline-primary">{skill.technology}</button>
                     </div>
@@ -202,7 +199,7 @@ export default function Home() {
           <div className="experience-column">
             <h2 className="my-5">Experience</h2>
             <div className="experience-container d-flex flex-column gap-3">
-              {experience.map((work) => (
+              {experience.map((work, _) => (
                 <div key={work.id} className="my-section">
                   <span className="circle"></span>
                   <p className="year">{work.date}</p>
@@ -218,7 +215,7 @@ export default function Home() {
         <section id="certification" className="p-2">
           <h2 className="my-5">Certification</h2>
           <div className="details-container">
-            {certifications.map((item) => (
+            {certifications.map((item, _) => (
               <div key={item.id} className="my-section">
                 <span className="circle"></span>
                 <p className="year">{item.date}</p>
@@ -234,7 +231,7 @@ export default function Home() {
         <section id="education" className="p-2">
           <h2 className="my-5">Education</h2>
           <div className="details-container">
-            {education.map((item) => (
+            {education.map((item, _) => (
               <div key={item.id} className="my-section">
                 <span className="circle"></span>
                 <p className="year">{item.date}</p>
@@ -250,7 +247,7 @@ export default function Home() {
           <h2 className="my-5">Projects</h2>
           <div className="d-flex flex-wrap gap-4">
             {
-              projects.map((project) => {
+              projects.map((project, _) => {
                 return (
                   <div key={project.id} className="project-section">
                     <h5>{project.title}</h5>
@@ -261,6 +258,21 @@ export default function Home() {
                         <a className="btn btn-success w-50" target="_blank" href={project.github}>GitHub</a>
                       )}
                     </div>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </section>
+
+        <section className="my-5 p-2">
+          <h2 className="my-5">Testimonials</h2>
+          <div className="d-flex flex-wrap gap-4">
+            {
+              testimonials.map((review, _) =>{
+                return(
+                  <div key={review.id} className="testimonial-section m-auto">                  
+                    <p className="text-center"><i className="fa-solid fa-quote-left fs-1 text-white"></i>&nbsp;&nbsp;{review.text}</p>
                   </div>
                 )
               })
