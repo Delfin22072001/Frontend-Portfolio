@@ -289,7 +289,7 @@ export default function Home() {
             <p className="text-secondary">Open to full-time Frontend and Full Stack roles, and freelance WordPress projects.</p>
             <div className="d-flex justify-content-center gap-3">
               <a href="https://www.linkedin.com/in/delfin-d-839876227/" target="_blank" className="btn btn-outline-primary">LinkedIn</a>
-              <a href="https://wa.me/918300957074?text=Hi%20Delfin%2C%20I%20saw%20your%20portfolio" target="_blank" className="btn btn-success">WhatsApp</a>
+              {/* <a href="https://wa.me/918300957074?text=Hi%20Delfin%2C%20I%20saw%20your%20portfolio" target="_blank" className="btn btn-success">WhatsApp</a> */}
               <a href="mailto:delfin22072002@gmail.com" className="btn btn-outline-primary">Email</a>
             </div>
           </div>
